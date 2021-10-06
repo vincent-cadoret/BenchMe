@@ -3,4 +3,4 @@ project(BenchMe C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(BenchMe main.c)
+add_executable(BenchMe main.c cmake-build-debug/function.cpp cmake-build-debug/function.h)
