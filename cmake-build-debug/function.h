@@ -6,9 +6,13 @@
 #define BENCHME_FUNCTION_H
 
 
-
-void triSelection(int uneListe[2]){
-
+void triSelection(float uneListe[], int uneTaille){
+    float temp = 0;
+    for (int i = 0; i < uneTaille; ++i) {
+        if(temp < uneListe[i]){
+            temp = uneListe[i];
+        }
+    }
 }
 
 
