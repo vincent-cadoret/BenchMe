@@ -8,54 +8,37 @@
 
 #include <assert.h>
 #include <time.h>
-void swap(int *a, int *b) {
-    int tmp = *a;
-    *a = *b;
-    *b = tmp;
+void inverse(float *foo, float *bar) {
+    float tmp = *foo;
+    *foo = *bar;
+    *bar = tmp;
 }
+void heapify(float unTableau[], int foo, int index) {
+    int max = index;
+    int gauche = 2 * index + 1;
+    int droite = 2 * index + 2;
 
-void heapify(int arr[], int n, int i) {
-    int max = i; //Initialize max as root
-    int leftChild = 2 * i + 1;
-    int rightChild = 2 * i + 2;
-
-    //If left child is greater than root
-    if (leftChild < n && arr[leftChild] > arr[max])
-        max = leftChild;
-
-    //If right child is greater than max
-    if (rightChild < n && arr[rightChild] > arr[max])
-        max = rightChild;
-
-    //If max is not root
-    if (max != i) {
-        swap(&arr[i], &arr[max]);
-        //heapify the affected sub-tree recursively
-        heapify(arr, n, max);
+    if (gauche < foo && unTableau[gauche] > unTableau[max]){
+        max = gauche;
+    }
+    if (droite < foo && unTableau[droite] > unTableau[max]){
+        max = droite;
+    }
+    if (max != index) {
+        inverse(&unTableau[index], &unTableau[max]);
+        heapify(unTableau, foo, max);
     }
 }
 
-//Main function to perform heap sort
-void heapSort(int arr[], int n) {
-    //Rearrange array (building heap)
-    for (int i = n / 2 - 1; i >= 0; i--)
-        heapify(arr, n, i);
-
-    //Extract elements from heap one by one
-    for (int i = n - 1; i >= 0; i--) {
-        swap(&arr[0], &arr[i]); //Current root moved to the end
-
-        heapify(arr, i, 0); //calling max heapify on the heap reduced
+void triParTas(float unTableau[], int foo) {
+    for (int i = foo / 2 - 1; i >= 0; i--){
+        heapify(unTableau, foo, i);
+    }
+    for (int i = foo - 1; i >= 0; i--) {
+        inverse(&unTableau[0], &unTableau[i]);
+        heapify(unTableau, i, 0);
     }
 }
-
-//print size of array n using utility function
-void display(int arr[], int n) {
-    for (int i = 0; i < n; ++i)
-        printf("%d ", arr[i]);
-    printf("\n");
-}
-
 void *triSelection(float unTableau[], int uneTaille){
     float temp;
     int index;
