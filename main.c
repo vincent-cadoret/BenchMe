@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int main() {
-    /* Début du BenchMe */
-    printf("Début du TP 002 !\n");
+    /* Debut du BenchMe */
+    printf("Debut du TP 002 !\n");
 
     printf("Fin du TP 002 !\n");
     return 0;
