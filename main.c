@@ -16,7 +16,7 @@ int main() {
     /*Génération du tableau*/
     t1 = clock();
 
-    srand( time( NULL ) );
+    srand(time(NULL));
     const int tab_max = (int)pow(10, 2);
     float *unTableau = (float*) malloc(sizeof(float) * tab_max);
     for (int i = 0; i < tab_max; i++) {
@@ -37,13 +37,13 @@ int main() {
         printf("%.2f ", unTableau[i]);
     }
 
-    /*Fonction n3*/
+    /*Fonction n4*/
     printf("\nFonction 4 : \n");
     int index = (int)sizeof(unTableau) / sizeof(unTableau[0]);
 
     triParTas(unTableau, index);
     for (int i = 0; i < index; i++) {
-        printf("%.2f", unTableau[i]);
+        printf("%.2f : ", unTableau[i]);
     }
 
     /*Calculateur de temps */

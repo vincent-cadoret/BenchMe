@@ -5,7 +5,6 @@
 #ifndef BENCHME_FUNCTION_H
 #define BENCHME_FUNCTION_H
 
-
 #include <assert.h>
 #include <time.h>
 void inverse(float *foo, float *bar) {
@@ -29,7 +28,6 @@ void heapify(float unTableau[], int foo, int index) {
         heapify(unTableau, foo, max);
     }
 }
-
 void triParTas(float unTableau[], int foo) {
     for (int i = foo / 2 - 1; i >= 0; i--){
         heapify(unTableau, foo, i);

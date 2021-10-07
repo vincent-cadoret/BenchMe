@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "BenchMe.exe"
-  "BenchMe.exe.manifest"
+  "BenchMe"
   "BenchMe.pdb"
-  "CMakeFiles/BenchMe.dir/main.c.obj"
-  "libBenchMe.dll.a"
+  "CMakeFiles/BenchMe.dir/main.c.o"
 )
 
 # Per-language clean rules from dependency scanning.
