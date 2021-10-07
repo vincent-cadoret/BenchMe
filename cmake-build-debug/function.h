@@ -7,6 +7,11 @@
 
 #include <assert.h>
 #include <time.h>
+void tempsTotalsFonctions(clock_t t1, clock_t t2){
+    float temps;
+    temps = (float)(t2 - t1)/CLOCKS_PER_SEC;
+    printf("temps = %.3f\n", temps);
+}
 void inverse(float *foo, float *bar) {
     float tmp = *foo;
     *foo = *bar;
@@ -68,6 +73,19 @@ void *triInsertion(float unTableau[], int uneTaille){
         }
     }
     return NULL;
+}
+/* Fonction n3*/
+void triParBulle(float unTableau[], int foo){
+    float tmp;
+    for (int i = 0; i < foo - 1; i++){
+        for (int j = 0; j < foo - i - 1; j++){
+            if (unTableau[j] > unTableau[j + 1]){
+                tmp = unTableau[j];
+                unTableau[j] = unTableau[j + 1];
+                unTableau[j + 1] = tmp;
+            }
+        }
+    }
 }
 
 
