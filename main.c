@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#include "cmake-build-debug/function.h"
+#include "function.h"
 
 #define DELAY_USEC_FP 10e6
 

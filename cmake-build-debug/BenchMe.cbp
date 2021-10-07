@@ -78,7 +78,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/vincent/CLionProjects/BenchMe/cmake-build-debug/function.h">
+		<Unit filename="/Users/vincent/CLionProjects/BenchMe/function.h">
 			<Option target="BenchMe"/>
 		</Unit>
 		<Unit filename="/Users/vincent/CLionProjects/BenchMe/main.c">
