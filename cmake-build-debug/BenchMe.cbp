@@ -74,6 +74,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/v.cadoret/CLionProjects/BenchMe/function.c">
+			<Option target="BenchMe"/>
+		</Unit>
 		<Unit filename="C:/Users/v.cadoret/CLionProjects/BenchMe/function.h">
 			<Option target="BenchMe"/>
 		</Unit>

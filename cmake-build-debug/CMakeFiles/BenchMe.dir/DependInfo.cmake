@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "C:/Users/v.cadoret/CLionProjects/BenchMe/function.c" "C:/Users/v.cadoret/CLionProjects/BenchMe/cmake-build-debug/CMakeFiles/BenchMe.dir/function.c.obj"
   "C:/Users/v.cadoret/CLionProjects/BenchMe/main.c" "C:/Users/v.cadoret/CLionProjects/BenchMe/cmake-build-debug/CMakeFiles/BenchMe.dir/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
