@@ -34,16 +34,37 @@ void inverse(float *foo, float *bar) {
     float tmp = *foo;
     *foo = *bar;
     *bar = tmp;
+}/**
+ *
+ * @param moyenne
+ * @param num
+ * @param fichier
+ */
+void writeValue(char *fichier, float unChiffre){
+    FILE *file = fopen(fichier, "a");
+    fprintf(file, "%.10f\n", unChiffre);
+    fclose(file);
 }
-void writeResult(/*float *unTableau, */const char *unNomFichier){
-    const int uneTaile = 24;
-    FILE *fp;
-    fp = fopen(&unNomFichier[0], "w+");
-    fprintf(fp, "coucou");
-    /*for (int i = 0; i < uneTaile; ++i) {
-        fprintf(fp, "fonction n° : %.6f\n", unTableau[i]);
-    }*/
-    fclose(fp);
+/**
+ *
+ * @param fichier
+ * @param unePuissance
+ */
+void writeBreak(char *fichier, int unePuissance){
+    FILE *file = fopen(fichier, "a");
+    fprintf(file, "10^%d\n", unePuissance);
+    fclose(file);
+}
+/**
+ *
+ * @param fichier
+ * @param uneSeed
+ */
+void writeSeed(char *fichier, int uneSeed){
+    FILE *file = fopen(fichier, "a");
+    fprintf(file, "Jeu de valeur №%d\n", uneSeed);
+    rewind(file);
+    fclose(file);
 }
 
 /**

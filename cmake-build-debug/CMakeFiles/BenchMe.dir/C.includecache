@@ -6,9 +6,17 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/v.cadoret/CLionProjects/BenchMe/function.c
-stdio.h
--
+C:/Users/Vincent Cadoret/CLionProjects/BenchMe/function.h
 time.h
 -
+
+C:/Users/Vincent Cadoret/CLionProjects/BenchMe/main.c
+stdio.h
+-
+stdlib.h
+-
+math.h
+-
+function.h
+C:/Users/Vincent Cadoret/CLionProjects/BenchMe/function.h
 

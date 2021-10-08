@@ -43,19 +43,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2021.2.2\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Users\Vincent Cadoret\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.5284.51\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2021.2.2\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "C:\Users\Vincent Cadoret\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.5284.51\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\v.cadoret\CLionProjects\BenchMe
+CMAKE_SOURCE_DIR = "C:\Users\Vincent Cadoret\CLionProjects\BenchMe"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\v.cadoret\CLionProjects\BenchMe\cmake-build-debug
+CMAKE_BINARY_DIR = "C:\Users\Vincent Cadoret\CLionProjects\BenchMe\cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/BenchMe.dir/depend.make
@@ -67,29 +67,29 @@ include CMakeFiles/BenchMe.dir/flags.make
 
 CMakeFiles/BenchMe.dir/main.c.obj: CMakeFiles/BenchMe.dir/flags.make
 CMakeFiles/BenchMe.dir/main.c.obj: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\v.cadoret\CLionProjects\BenchMe\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/BenchMe.dir/main.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\BenchMe.dir\main.c.obj -c C:\Users\v.cadoret\CLionProjects\BenchMe\main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Vincent Cadoret\CLionProjects\BenchMe\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/BenchMe.dir/main.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\BenchMe.dir\main.c.obj -c "C:\Users\Vincent Cadoret\CLionProjects\BenchMe\main.c"
 
 CMakeFiles/BenchMe.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/BenchMe.dir/main.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\v.cadoret\CLionProjects\BenchMe\main.c > CMakeFiles\BenchMe.dir\main.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Vincent Cadoret\CLionProjects\BenchMe\main.c" > CMakeFiles\BenchMe.dir\main.c.i
 
 CMakeFiles/BenchMe.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/BenchMe.dir/main.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\v.cadoret\CLionProjects\BenchMe\main.c -o CMakeFiles\BenchMe.dir\main.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Vincent Cadoret\CLionProjects\BenchMe\main.c" -o CMakeFiles\BenchMe.dir\main.c.s
 
 CMakeFiles/BenchMe.dir/function.c.obj: CMakeFiles/BenchMe.dir/flags.make
 CMakeFiles/BenchMe.dir/function.c.obj: ../function.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\v.cadoret\CLionProjects\BenchMe\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/BenchMe.dir/function.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\BenchMe.dir\function.c.obj -c C:\Users\v.cadoret\CLionProjects\BenchMe\function.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Vincent Cadoret\CLionProjects\BenchMe\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/BenchMe.dir/function.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\BenchMe.dir\function.c.obj -c "C:\Users\Vincent Cadoret\CLionProjects\BenchMe\function.c"
 
 CMakeFiles/BenchMe.dir/function.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/BenchMe.dir/function.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\v.cadoret\CLionProjects\BenchMe\function.c > CMakeFiles\BenchMe.dir\function.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Vincent Cadoret\CLionProjects\BenchMe\function.c" > CMakeFiles\BenchMe.dir\function.c.i
 
 CMakeFiles/BenchMe.dir/function.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/BenchMe.dir/function.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\v.cadoret\CLionProjects\BenchMe\function.c -o CMakeFiles\BenchMe.dir\function.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Vincent Cadoret\CLionProjects\BenchMe\function.c" -o CMakeFiles\BenchMe.dir\function.c.s
 
 # Object files for target BenchMe
 BenchMe_OBJECTS = \
@@ -105,7 +105,7 @@ BenchMe.exe: CMakeFiles/BenchMe.dir/build.make
 BenchMe.exe: CMakeFiles/BenchMe.dir/linklibs.rsp
 BenchMe.exe: CMakeFiles/BenchMe.dir/objects1.rsp
 BenchMe.exe: CMakeFiles/BenchMe.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\v.cadoret\CLionProjects\BenchMe\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable BenchMe.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Vincent Cadoret\CLionProjects\BenchMe\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable BenchMe.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\BenchMe.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -117,6 +117,6 @@ CMakeFiles/BenchMe.dir/clean:
 .PHONY : CMakeFiles/BenchMe.dir/clean
 
 CMakeFiles/BenchMe.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\v.cadoret\CLionProjects\BenchMe C:\Users\v.cadoret\CLionProjects\BenchMe C:\Users\v.cadoret\CLionProjects\BenchMe\cmake-build-debug C:\Users\v.cadoret\CLionProjects\BenchMe\cmake-build-debug C:\Users\v.cadoret\CLionProjects\BenchMe\cmake-build-debug\CMakeFiles\BenchMe.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\Vincent Cadoret\CLionProjects\BenchMe" "C:\Users\Vincent Cadoret\CLionProjects\BenchMe" "C:\Users\Vincent Cadoret\CLionProjects\BenchMe\cmake-build-debug" "C:\Users\Vincent Cadoret\CLionProjects\BenchMe\cmake-build-debug" "C:\Users\Vincent Cadoret\CLionProjects\BenchMe\cmake-build-debug\CMakeFiles\BenchMe.dir\DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/BenchMe.dir/depend
 
