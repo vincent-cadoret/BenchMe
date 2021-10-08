@@ -35,14 +35,12 @@ void inverse(float *foo, float *bar) {
     *foo = *bar;
     *bar = tmp;
 }
-void writeResult(/*float *unTableau, */const char *unNomFichier){
-    const int uneTaile = 24;
+void writeFile(const char *unNomFichier, float unTemps){
+    const char value = (char)unTemps;
+    printf("%s", value);
     FILE *fp;
-    fp = fopen(&unNomFichier[0], "w+");
-    fprintf(fp, "coucou");
-    /*for (int i = 0; i < uneTaile; ++i) {
-        fprintf(fp, "fonction n° : %.6f\n", unTableau[i]);
-    }*/
+    fp = fopen(&unNomFichier[0], "a");
+    fprintf(fp, &value); // problème de value qui ne rentre pas.
     fclose(fp);
 }
 

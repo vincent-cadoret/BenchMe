@@ -6,7 +6,7 @@
 void printArray(float *unTableau, int tab_max);
 double tempsTotalsFonctions(clock_t t1, clock_t t2);
 void inverse(float *foo, float *bar);
-void writeResult(/*float *unTableau, */const char *unNomFichier);
+void writeFile(const char *unNomFichier, float unTemps);
 void triSelection(float unTableau[], int uneTaille);
 void triInsertion(float unTableau[], int uneTaille);
 void triBulle(float unTableau[], int uneTaille);
