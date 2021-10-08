@@ -7,6 +7,11 @@
 
 #include <assert.h>
 #include <time.h>
+void printArray(float *unTableau, int tab_max){
+    for (int i = 0; i < tab_max ; i++){
+        printf("%.2f ", unTableau[i]);
+    }
+}
 void tempsTotalsFonctions(clock_t t1, clock_t t2){
     float temps;
     temps = (float)(t2 - t1)/CLOCKS_PER_SEC;

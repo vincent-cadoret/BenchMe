@@ -13,37 +13,38 @@ int main() {
 
     /*Génération du tableau*/
     srand(time(NULL));
-    const int tab_max = (int)pow(10, 1);
+    const int tab_max = (int)pow(10, 5);
     float *unTableau = (float*) malloc(sizeof(float) * tab_max);
 
     for (int i = 0; i < tab_max; i++) {
         unTableau[i] = ((float)rand()/(float)(RAND_MAX)) * 1000000.0;
     }
     /* Fonction n1 */
+
     printf("\nFonction 1 : \n");
     triSelection(unTableau, tab_max);
-    for (int i = 0; i < tab_max ; i++){
-        printf("%.2f ", unTableau[i]);
-    }
+    printArray(unTableau, tab_max);
+
     /* Fonction n2 */
+
     printf("\nFonction 2 : \n");
     triInsertion(unTableau, tab_max);
-    for (int i = 0; i < tab_max ; i++){
-        printf("%.2f ", unTableau[i]);
-    }
-    /* fonction n3*/
+    printArray(unTableau, tab_max);
+
+    /* Fonction n3*/
+
     printf("\nFonction 3 : \n");
     triParBulle(unTableau, tab_max);
-    for (int i = 0; i < tab_max; i++) {
-        printf("%.2f ", unTableau[i]);
-    }
+    printArray(unTableau, tab_max);
+
     /*Fonction n4*/
+
     printf("\nFonction 4 : \n");
     triParTas(unTableau, tab_max);
-    for (int i = 0; i < tab_max; i++) {
-        printf("%.2f ", unTableau[i]);
-    }
+    printArray(unTableau, tab_max);
+
     /*Calculateur de temps */
+
     printf("\nTemps totale : \n");
     clock_t t2 = clock(); /* Variable de calcul de temps */
     tempsTotalsFonctions(t1,t2);
