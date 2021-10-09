@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "BenchMe.exe"
   "BenchMe.exe.manifest"
   "BenchMe.pdb"
+  "CMakeFiles/BenchMe.dir/function.c.obj"
   "CMakeFiles/BenchMe.dir/main.c.obj"
   "libBenchMe.dll.a"
 )
