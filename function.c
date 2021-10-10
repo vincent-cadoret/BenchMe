@@ -34,11 +34,11 @@ void inverse(float *foo, float *bar) {
     float tmp = *foo;
     *foo = *bar;
     *bar = tmp;
-}/**
+}
+/**
  *
- * @param moyenne
- * @param num
  * @param fichier
+ * @param unChiffre
  */
 void writeValue(char *fichier, float unChiffre){
     FILE *file = fopen(fichier, "a");
